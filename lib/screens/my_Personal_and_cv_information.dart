@@ -207,7 +207,7 @@ class _MyPersonalAndCvInformationState extends State<MyPersonalAndCvInformation>
                       return Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: SizedBox(
-                          height: 150.0,
+                          height: 200.0,
                           width: MediaQuery.sizeOf(context).width,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -242,17 +242,19 @@ class _MyPersonalAndCvInformationState extends State<MyPersonalAndCvInformation>
                                         ),
                                       ),
                                     ),
-                                    Expanded(
-                                      child: Align(
-                                        alignment: AlignmentDirectional.centerStart,
-                                        child: Text(
-                                          description,
-                                          textAlign: TextAlign.start,
-                                          style: const TextStyle(
-                                            color: AppColors.KGrey,
-                                            fontSize: 15.0,
-                                            fontWeight: FontWeight.w200,
-                                          ),
+                                    addVerticalDivider(
+                                      10.0,
+                                    ),
+                                    Align(
+                                      alignment: AlignmentDirectional.centerStart,
+                                      child: Text(
+                                        maxLines: 9,
+                                        description,
+                                        textAlign: TextAlign.start,
+                                        style: const TextStyle(
+                                          color: AppColors.KGrey,
+                                          fontSize: 15.0,
+                                          fontWeight: FontWeight.w200,
                                         ),
                                       ),
                                     ),
