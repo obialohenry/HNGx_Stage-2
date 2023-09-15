@@ -216,7 +216,7 @@ class _MyPersonalAndCvInformationState extends State<MyPersonalAndCvInformation>
                                 width: MediaQuery.sizeOf(context).width -
                                     (MediaQuery.sizeOf(context).width / 3),
                                 child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  
                                   children: [
                                     Align(
                                       alignment: AlignmentDirectional.centerStart,
