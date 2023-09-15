@@ -205,7 +205,7 @@ class _MyPersonalAndCvInformationState extends State<MyPersonalAndCvInformation>
                       String description = myCV[index].decription;
                       bool isVisible = myCV[index].isVisible;
                       return Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
+                        padding: const EdgeInsets.symmetric(vertical: 5.0),
                         child: SizedBox(
                           height: 200.0,
                           width: MediaQuery.sizeOf(context).width,
@@ -269,12 +269,15 @@ class _MyPersonalAndCvInformationState extends State<MyPersonalAndCvInformation>
                                     );
                                   });
                                 },
-                                child: Visibility(
-                                  visible: isVisible,
-                                  child: const Icon(
-                                    Icons.delete,
-                                    color: AppColors.KBioText,
-                                    size: 35.0,
+                                child: Align(
+                                  alignment: AlignmentDirectional.topCenter,
+                                  child: Visibility(
+                                    visible: isVisible,
+                                    child: const Icon(
+                                      Icons.delete,
+                                      color: AppColors.KBioText,
+                                      size: 35.0,
+                                    ),
                                   ),
                                 ),
                               )
