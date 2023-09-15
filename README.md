@@ -20,6 +20,7 @@ This project assumes that I have a basic understanding of flutter and dart progr
 
 ## Usage
 - Launch the app.
-- You will see the first page showcasing my personal and professional details.
-- To edit those details,.
->>>>>>> e63b13ec7f293d7a1aed27a81cf47ab15af7ad45
+- You will see the first page showcasing my personal and professional details, and a space below for my projects.
+- To edit these details, you click on the edit CV button on the top right of the screen.
+- After editing, you click on the save CV details button below the page screen. 
+
