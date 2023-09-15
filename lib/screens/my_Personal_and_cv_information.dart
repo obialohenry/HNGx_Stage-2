@@ -248,7 +248,7 @@ class _MyPersonalAndCvInformationState extends State<MyPersonalAndCvInformation>
                                     Align(
                                       alignment: AlignmentDirectional.centerStart,
                                       child: Text(
-                                        maxLines: 9,
+                                        maxLines: 10,
                                         description,
                                         textAlign: TextAlign.start,
                                         style: const TextStyle(
