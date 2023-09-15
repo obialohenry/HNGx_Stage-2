@@ -34,7 +34,7 @@ class _MyPersonalAndCvInformationState extends State<MyPersonalAndCvInformation>
     slackName = widget.slackName;
   }
 
-  String text = "Add projects to your CV by clicking on the Edit Projects button";
+  String text = "Add projects to your CV by clicking on the Edit CV button";
   late String name;
   late String slackName;
   late String githubProfile;
