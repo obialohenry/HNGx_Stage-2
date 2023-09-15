@@ -1,16 +1,25 @@
-# hngx_stage_2
 
-A new Flutter project.
+# HNGx_Stage-2
+
+## Description
+This project is for the second stage of my internship. It serves as a comprehensive CV, showcasing personal and professional details, and an editing page of the provided CV information.
+
+## Table of Contents
+- Description
+- Getting Started
+- Assumptions
+- Usage
 
 ## Getting Started
+Follow these steps to run the project locally:
+1. Clone this repository.
+2. Open the project in your preffered editor.
 
-This project is a starting point for a Flutter application.
+## Assumptions
+This project assumes that I have a basic understanding of flutter and dart programming.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Usage
+- Launch the app.
+- You will see the first page showcasing my personal and professional details.
+- To edit those details,.
+>>>>>>> e63b13ec7f293d7a1aed27a81cf47ab15af7ad45
