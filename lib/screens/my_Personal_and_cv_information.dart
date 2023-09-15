@@ -204,44 +204,80 @@ class _MyPersonalAndCvInformationState extends State<MyPersonalAndCvInformation>
                       String title = myCV[index].title;
                       String description = myCV[index].decription;
                       bool isVisible = myCV[index].isVisible;
-                      return SizedBox(
-                        height: 150.0,
-                        width: MediaQuery.sizeOf(context).width,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(year),
-                                addVerticalDivider(
-                                  10.0,
-                                ),
-                                Text(title),
-                                addVerticalDivider(
-                                  10.0,
-                                ),
-                                Text(description),
-                              ],
-                            ),
-                            GestureDetector(
-                              onTap: () {
-                                setState(() {
-                                  myCV.remove(
-                                    myCV[index],
-                                  );
-                                });
-                              },
-                              child: Visibility(
-                                visible: isVisible,
-                                child: const Icon(
-                                  Icons.delete,
-                                  color: AppColors.KBioText,
-                                  size: 20.0,
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 10.0),
+                        child: SizedBox(
+                          height: 150.0,
+                          width: MediaQuery.sizeOf(context).width,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              SizedBox(
+                                width: MediaQuery.sizeOf(context).width -
+                                    (MediaQuery.sizeOf(context).width / 3),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Align(
+                                      alignment: AlignmentDirectional.centerStart,
+                                      child: Text(
+                                        year,
+                                        style: const TextStyle(
+                                          color: AppColors.KGrey,
+                                          fontSize: 16.0,
+                                        ),
+                                      ),
+                                    ),
+                                    addVerticalDivider(
+                                      10.0,
+                                    ),
+                                    Align(
+                                      alignment: AlignmentDirectional.centerStart,
+                                      child: Text(
+                                        title,
+                                        style: const TextStyle(
+                                          color: AppColors.KWhite,
+                                          fontSize: 20.0,
+                                          fontWeight: FontWeight.w700,
+                                        ),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: Align(
+                                        alignment: AlignmentDirectional.centerStart,
+                                        child: Text(
+                                          description,
+                                          textAlign: TextAlign.start,
+                                          style: const TextStyle(
+                                            color: AppColors.KGrey,
+                                            fontSize: 15.0,
+                                            fontWeight: FontWeight.w200,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
-                            )
-                          ],
+                              GestureDetector(
+                                onTap: () {
+                                  setState(() {
+                                    myCV.remove(
+                                      myCV[index],
+                                    );
+                                  });
+                                },
+                                child: Visibility(
+                                  visible: isVisible,
+                                  child: const Icon(
+                                    Icons.delete,
+                                    color: AppColors.KBioText,
+                                    size: 35.0,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       );
                     }),
